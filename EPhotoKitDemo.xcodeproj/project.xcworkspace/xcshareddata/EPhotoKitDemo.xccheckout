@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>385146F7-DBFC-4E89-B757-C26C0094A5B4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EPhotoKitDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C157012E-8349-462D-9D52-CA900BB754B2</key>
+		<string>https://github.com/zhuhuihuihui/EPhotoKit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EPhotoKitDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C157012E-8349-462D-9D52-CA900BB754B2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zhuhuihuihui/EPhotoKit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C157012E-8349-462D-9D52-CA900BB754B2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C157012E-8349-462D-9D52-CA900BB754B2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EPhotoKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
