@@ -168,7 +168,7 @@
 			children = (
 				D26D800E1980BCF500746E4D /* Category */,
 			);
-			name = EPhotoKit;
+			path = EPhotoKit;
 			sourceTree = "<group>";
 		};
 		D26D800E1980BCF500746E4D /* Category */ = {
