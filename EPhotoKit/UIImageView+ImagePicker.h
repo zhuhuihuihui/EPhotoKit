@@ -9,6 +9,19 @@
 #import <UIKit/UIKit.h>
 #import "UIView+FindUIViewController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+
+#define PHOTO           0
+#define CAMERA          1
+#define LATEST_TAKE     2
+
+
+@protocol UIImageViewDelegate <NSObject>
+
+@optional
+
+
+@end
 
 @interface UIImageView (ImagePicker) <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -17,5 +30,5 @@
 - (void)setImagePickerEnable:(BOOL)enable;
 
 
-
+@property (weak, nonatomic) id <UIImageViewDelegate> delegate;
 @end
