@@ -43,9 +43,44 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma -mark- Actions
+
 - (IBAction)buttonPressed:(id)sender
 {
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
     
+    // Enumerate just the photos and videos group by using ALAssetsGroupSavedPhotos.
+    [library enumerateGroupsWithTypes:ALAssetsGroupEvent
+                           usingBlock:^(ALAssetsGroup *group, BOOL *stop)
+     {
+         //if ([group numberOfAssets] < 1) return ;
+         NSLog(@"%@", group);
+         
+         // Within the group enumeration block, filter to enumerate just photos.
+         //[group setAssetsFilter:[ALAssetsFilter allPhotos]];
+         
+         // Chooses the photo at the last index
+//         [group enumerateAssetsWithOptions:NSEnumerationReverse
+//                                usingBlock:^(ALAsset *alAsset, NSUInteger index, BOOL *innerStop)
+//          {
+//              
+//              // The end of the enumeration is signaled by asset == nil.
+//              if (alAsset)
+//              {
+//                  ALAssetRepresentation *representation = [alAsset defaultRepresentation];
+//                  UIImage *latestPhoto = [UIImage imageWithCGImage:[representation fullScreenImage]];
+//                  
+//                  // Stop the enumerations
+//                  *stop = YES; *innerStop = YES;
+//                  
+//                  // Do something interesting with the AV asset.
+//                  
+//              }
+//          }];
+     } failureBlock: ^(NSError *error) {
+         // Typically you should handle an error more gracefully than this.
+         NSLog(@"No groups");
+     }];
 }
 
 - (void) imageViewTapped:(UITapGestureRecognizer *)tapGestureRecognizer
@@ -62,7 +97,6 @@
 #pragma -mark- UIActionSheetDelegate
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    NSLog(@"%d", buttonIndex);
     switch (buttonIndex)
     {
         case 0:
