@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20839D1198CA18A00BE4069 /* UIImageViewWithPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D20839D0198CA18A00BE4069 /* UIImageViewWithPicker.m */; };
 		D26D7FD3197FAE1F00746E4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D7FD2197FAE1F00746E4D /* Foundation.framework */; };
 		D26D7FD5197FAE1F00746E4D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D7FD4197FAE1F00746E4D /* CoreGraphics.framework */; };
 		D26D7FD7197FAE1F00746E4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D7FD6197FAE1F00746E4D /* UIKit.framework */; };
@@ -38,7 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D20839CD198BF44A00BE4069 /* UIImageViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewDelegate.h; sourceTree = "<group>"; };
+		D20839CF198CA18A00BE4069 /* UIImageViewWithPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewWithPicker.h; sourceTree = "<group>"; };
+		D20839D0198CA18A00BE4069 /* UIImageViewWithPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewWithPicker.m; sourceTree = "<group>"; };
 		D26D7FCF197FAE1F00746E4D /* EPhotoKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPhotoKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26D7FD2197FAE1F00746E4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D26D7FD4197FAE1F00746E4D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D20839CE198C9F8400BE4069 /* Subclass */ = {
+			isa = PBXGroup;
+			children = (
+				D20839CF198CA18A00BE4069 /* UIImageViewWithPicker.h */,
+				D20839D0198CA18A00BE4069 /* UIImageViewWithPicker.m */,
+			);
+			name = Subclass;
+			sourceTree = "<group>";
+		};
 		D26D7FC6197FAE1F00746E4D = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +182,7 @@
 		D26D8007197FAE2A00746E4D /* EPhotoKit */ = {
 			isa = PBXGroup;
 			children = (
+				D20839CE198C9F8400BE4069 /* Subclass */,
 				D26D800E1980BCF500746E4D /* Category */,
 			);
 			path = EPhotoKit;
@@ -183,7 +195,6 @@
 				D26D800C197FBEF000746E4D /* UIImageView+ImagePicker.m */,
 				D26D800F1980BD1E00746E4D /* UIView+FindUIViewController.h */,
 				D26D80101980BD1E00746E4D /* UIView+FindUIViewController.m */,
-				D20839CD198BF44A00BE4069 /* UIImageViewDelegate.h */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -289,6 +300,7 @@
 				D26D800D197FBEF000746E4D /* UIImageView+ImagePicker.m in Sources */,
 				D26D800A197FB77900746E4D /* EPhotoKitDemoViewController.m in Sources */,
 				D26D7FE3197FAE1F00746E4D /* AppDelegate.m in Sources */,
+				D20839D1198CA18A00BE4069 /* UIImageViewWithPicker.m in Sources */,
 				D26D7FDF197FAE1F00746E4D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

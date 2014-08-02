@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "UIImageView+ImagePicker.h"
+#import "UIImageViewWithPicker.h"
 
-@interface EPhotoKitDemoViewController : UIViewController <UIActionSheetDelegate, UIImageViewDelegate>
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@interface EPhotoKitDemoViewController : UIViewController <UIActionSheetDelegate, UIImagePickerControllerDelegate, UIImageViewWithPickerDelegate>
+@property (weak, nonatomic) IBOutlet UIImageViewWithPicker *imageView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewUsingCatagore;
 

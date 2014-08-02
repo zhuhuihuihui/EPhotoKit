@@ -30,12 +30,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewTapped:)];
-    
-    [_imageView addGestureRecognizer:tapGestureRecognizer];
+    [_imageView setImagePickerEnable:YES];
+    [_imageView setDelegate:self];
     
     [_imageViewUsingCatagore setImagePickerEnable:YES];
-    _imageViewUsingCatagore.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -127,13 +125,12 @@
 }
 
 
-#pragma -mark- UIImageViewDelegate
-- (void)imageView:(UIImageView *)imageView
-         imageGet:(UIImage *)image
-   fromSourceType:(UIImagePickerControllerSourceType)sourceType
+#pragma -mark- UIImageViewWithPickerDelegate
+- (void)imageViewWithPicker:(UIImageViewWithPicker *)imageViewWithPicker
+                   imageGet:(UIImage *)image
+             fromSourceType:(SourceType)sourceType
 {
-    NSLog(@"UIImageViewDelegate triggered!!");
+    NSLog(@"UIImageViewWithPickerDelegate triggered!! by source Type : %d", sourceType);
 }
-
 
 @end
