@@ -16,19 +16,11 @@
 #define LATEST_TAKE     2
 
 
-@protocol UIImageViewDelegate <NSObject>
-
-@optional
-
-
-@end
-
 @interface UIImageView (ImagePicker) <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-//@property (nonatomic, strong) UIImagePickerController *imagePickerController;
+
 
 - (void)setImagePickerEnable:(BOOL)enable;
 
 
-@property (weak, nonatomic) id <UIImageViewDelegate> delegate;
 @end

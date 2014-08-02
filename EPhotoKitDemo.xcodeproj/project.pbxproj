@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D20839CD198BF44A00BE4069 /* UIImageViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewDelegate.h; sourceTree = "<group>"; };
 		D26D7FCF197FAE1F00746E4D /* EPhotoKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPhotoKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26D7FD2197FAE1F00746E4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D26D7FD4197FAE1F00746E4D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -182,6 +183,7 @@
 				D26D800C197FBEF000746E4D /* UIImageView+ImagePicker.m */,
 				D26D800F1980BD1E00746E4D /* UIView+FindUIViewController.h */,
 				D26D80101980BD1E00746E4D /* UIView+FindUIViewController.m */,
+				D20839CD198BF44A00BE4069 /* UIImageViewDelegate.h */,
 			);
 			name = Category;
 			sourceTree = "<group>";

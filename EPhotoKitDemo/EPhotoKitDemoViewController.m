@@ -7,7 +7,7 @@
 //
 
 #import "EPhotoKitDemoViewController.h"
-#import "UIImageView+ImagePicker.h"
+
 
 @interface EPhotoKitDemoViewController ()
 
@@ -35,6 +35,7 @@
     [_imageView addGestureRecognizer:tapGestureRecognizer];
     
     [_imageViewUsingCatagore setImagePickerEnable:YES];
+    _imageViewUsingCatagore.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,7 +51,7 @@
     ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
     
     // Enumerate just the photos and videos group by using ALAssetsGroupSavedPhotos.
-    [library enumerateGroupsWithTypes:ALAssetsGroupEvent
+    [library enumerateGroupsWithTypes:ALAssetsGroupAll
                            usingBlock:^(ALAssetsGroup *group, BOOL *stop)
      {
          //if ([group numberOfAssets] < 1) return ;
@@ -125,6 +126,14 @@
     }
 }
 
+
+#pragma -mark- UIImageViewDelegate
+- (void)imageView:(UIImageView *)imageView
+         imageGet:(UIImage *)image
+   fromSourceType:(UIImagePickerControllerSourceType)sourceType
+{
+    NSLog(@"UIImageViewDelegate triggered!!");
+}
 
 
 @end
