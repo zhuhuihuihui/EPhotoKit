@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.description  = <<-DESC
-                   None
+                   Pod handles photo related tasks, thank you.
 
                    DESC
 
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.screenshots  = "https://dl.dropboxusercontent.com/s/u6qfqyuhe49hfmt/EColumnChartScreenShot.png", "https://dl.dropboxusercontent.com/s/bafyk9xj2mxchyg/ELineChartScreenShot.png"
 
 
-  s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   s.author             = { "Scott Zhu" => "zhuhuihuihui@gmail.com" }
   s.social_media_url = "https://twitter.com/zhujianhui"
