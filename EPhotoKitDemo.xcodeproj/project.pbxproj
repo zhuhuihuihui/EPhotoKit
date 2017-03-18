@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D20839D1198CA18A00BE4069 /* UIImageViewWithPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D20839D0198CA18A00BE4069 /* UIImageViewWithPicker.m */; };
+		D25A61FD1E7DEBF60069A2C7 /* EPhotoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25A61F41E7DEBF50069A2C7 /* EPhotoKit.framework */; };
+		D25A62041E7DEBF60069A2C7 /* EPhotoKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25A62031E7DEBF60069A2C7 /* EPhotoKitTests.m */; };
+		D25A62061E7DEBF60069A2C7 /* EPhotoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D25A61F61E7DEBF50069A2C7 /* EPhotoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D25A62091E7DEBF60069A2C7 /* EPhotoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25A61F41E7DEBF50069A2C7 /* EPhotoKit.framework */; };
+		D25A620A1E7DEBF60069A2C7 /* EPhotoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D25A61F41E7DEBF50069A2C7 /* EPhotoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D25A62121E7DEC750069A2C7 /* UIImageViewWithPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = D20839CF198CA18A00BE4069 /* UIImageViewWithPicker.h */; };
+		D25A62131E7DEC7C0069A2C7 /* UIImageViewWithPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D20839D0198CA18A00BE4069 /* UIImageViewWithPicker.m */; };
+		D25A62141E7DEC830069A2C7 /* UIImageView+ImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = D26D800B197FBEF000746E4D /* UIImageView+ImagePicker.h */; };
+		D25A62151E7DEC860069A2C7 /* UIImageView+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D26D800C197FBEF000746E4D /* UIImageView+ImagePicker.m */; };
+		D25A62161E7DEC8C0069A2C7 /* UIView+FindUIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D26D800F1980BD1E00746E4D /* UIView+FindUIViewController.h */; };
+		D25A62171E7DEC8E0069A2C7 /* UIView+FindUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26D80101980BD1E00746E4D /* UIView+FindUIViewController.m */; };
 		D26D7FD3197FAE1F00746E4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D7FD2197FAE1F00746E4D /* Foundation.framework */; };
 		D26D7FD5197FAE1F00746E4D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D7FD4197FAE1F00746E4D /* CoreGraphics.framework */; };
 		D26D7FD7197FAE1F00746E4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D7FD6197FAE1F00746E4D /* UIKit.framework */; };
@@ -16,32 +26,59 @@
 		D26D7FE3197FAE1F00746E4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D26D7FE2197FAE1F00746E4D /* AppDelegate.m */; };
 		D26D7FE6197FAE1F00746E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26D7FE4197FAE1F00746E4D /* Main.storyboard */; };
 		D26D7FEB197FAE1F00746E4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D26D7FEA197FAE1F00746E4D /* Images.xcassets */; };
-		D26D7FF2197FAE1F00746E4D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D7FF1197FAE1F00746E4D /* XCTest.framework */; };
-		D26D7FF3197FAE1F00746E4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D7FD2197FAE1F00746E4D /* Foundation.framework */; };
-		D26D7FF4197FAE1F00746E4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D7FD6197FAE1F00746E4D /* UIKit.framework */; };
-		D26D7FFC197FAE1F00746E4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D26D7FFA197FAE1F00746E4D /* InfoPlist.strings */; };
-		D26D7FFE197FAE1F00746E4D /* EPhotoKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D26D7FFD197FAE1F00746E4D /* EPhotoKitDemoTests.m */; };
 		D26D800A197FB77900746E4D /* EPhotoKitDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26D8009197FB77900746E4D /* EPhotoKitDemoViewController.m */; };
-		D26D800D197FBEF000746E4D /* UIImageView+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D26D800C197FBEF000746E4D /* UIImageView+ImagePicker.m */; };
-		D26D80111980BD1E00746E4D /* UIView+FindUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26D80101980BD1E00746E4D /* UIView+FindUIViewController.m */; };
 		D26D80131980FF6600746E4D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D80121980FF6600746E4D /* MobileCoreServices.framework */; };
 		D26D80151983ABE000746E4D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D80141983ABE000746E4D /* AssetsLibrary.framework */; };
 		D2FC417A1E7634E10069C0B5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FC41791E7634E10069C0B5 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D26D7FF5197FAE1F00746E4D /* PBXContainerItemProxy */ = {
+		D25A61FE1E7DEBF60069A2C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D26D7FC7197FAE1F00746E4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D25A61F31E7DEBF50069A2C7;
+			remoteInfo = EPhotoKit;
+		};
+		D25A62001E7DEBF60069A2C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D26D7FC7197FAE1F00746E4D /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D26D7FCE197FAE1F00746E4D;
 			remoteInfo = EPhotoKitDemo;
 		};
+		D25A62071E7DEBF60069A2C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D26D7FC7197FAE1F00746E4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D25A61F31E7DEBF50069A2C7;
+			remoteInfo = EPhotoKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D25A62101E7DEBF60069A2C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D25A620A1E7DEBF60069A2C7 /* EPhotoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D20839CF198CA18A00BE4069 /* UIImageViewWithPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewWithPicker.h; sourceTree = "<group>"; };
 		D20839D0198CA18A00BE4069 /* UIImageViewWithPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewWithPicker.m; sourceTree = "<group>"; };
+		D25A61F41E7DEBF50069A2C7 /* EPhotoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EPhotoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25A61F61E7DEBF50069A2C7 /* EPhotoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPhotoKit.h; sourceTree = "<group>"; };
+		D25A61F71E7DEBF50069A2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25A61FC1E7DEBF50069A2C7 /* EPhotoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPhotoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25A62031E7DEBF60069A2C7 /* EPhotoKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPhotoKitTests.m; sourceTree = "<group>"; };
+		D25A62051E7DEBF60069A2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D26D7FCF197FAE1F00746E4D /* EPhotoKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPhotoKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26D7FD2197FAE1F00746E4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D26D7FD4197FAE1F00746E4D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,11 +91,7 @@
 		D26D7FE2197FAE1F00746E4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D26D7FE5197FAE1F00746E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D26D7FEA197FAE1F00746E4D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D26D7FF0197FAE1F00746E4D /* EPhotoKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPhotoKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26D7FF1197FAE1F00746E4D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D26D7FF9197FAE1F00746E4D /* EPhotoKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EPhotoKitDemoTests-Info.plist"; sourceTree = "<group>"; };
-		D26D7FFB197FAE1F00746E4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D26D7FFD197FAE1F00746E4D /* EPhotoKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPhotoKitDemoTests.m; sourceTree = "<group>"; };
 		D26D8008197FB77900746E4D /* EPhotoKitDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPhotoKitDemoViewController.h; sourceTree = "<group>"; };
 		D26D8009197FB77900746E4D /* EPhotoKitDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPhotoKitDemoViewController.m; sourceTree = "<group>"; };
 		D26D800B197FBEF000746E4D /* UIImageView+ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ImagePicker.h"; sourceTree = "<group>"; };
@@ -71,6 +104,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D25A61F01E7DEBF50069A2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25A61F91E7DEBF50069A2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25A61FD1E7DEBF60069A2C7 /* EPhotoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D26D7FCC197FAE1F00746E4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,17 +127,8 @@
 				D26D80131980FF6600746E4D /* MobileCoreServices.framework in Frameworks */,
 				D26D7FD5197FAE1F00746E4D /* CoreGraphics.framework in Frameworks */,
 				D26D7FD7197FAE1F00746E4D /* UIKit.framework in Frameworks */,
+				D25A62091E7DEBF60069A2C7 /* EPhotoKit.framework in Frameworks */,
 				D26D7FD3197FAE1F00746E4D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D26D7FED197FAE1F00746E4D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D26D7FF2197FAE1F00746E4D /* XCTest.framework in Frameworks */,
-				D26D7FF4197FAE1F00746E4D /* UIKit.framework in Frameworks */,
-				D26D7FF3197FAE1F00746E4D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,12 +144,32 @@
 			name = Subclass;
 			sourceTree = "<group>";
 		};
+		D25A61F51E7DEBF50069A2C7 /* EPhotoKit */ = {
+			isa = PBXGroup;
+			children = (
+				D20839CE198C9F8400BE4069 /* Subclass */,
+				D26D800E1980BCF500746E4D /* Category */,
+				D25A61F61E7DEBF50069A2C7 /* EPhotoKit.h */,
+				D25A61F71E7DEBF50069A2C7 /* Info.plist */,
+			);
+			path = EPhotoKit;
+			sourceTree = "<group>";
+		};
+		D25A62021E7DEBF60069A2C7 /* EPhotoKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D25A62031E7DEBF60069A2C7 /* EPhotoKitTests.m */,
+				D25A62051E7DEBF60069A2C7 /* Info.plist */,
+			);
+			path = EPhotoKitTests;
+			sourceTree = "<group>";
+		};
 		D26D7FC6197FAE1F00746E4D = {
 			isa = PBXGroup;
 			children = (
-				D26D8007197FAE2A00746E4D /* EPhotoKit */,
 				D26D7FD8197FAE1F00746E4D /* EPhotoKitDemo */,
-				D26D7FF7197FAE1F00746E4D /* EPhotoKitDemoTests */,
+				D25A61F51E7DEBF50069A2C7 /* EPhotoKit */,
+				D25A62021E7DEBF60069A2C7 /* EPhotoKitTests */,
 				D26D7FD1197FAE1F00746E4D /* Frameworks */,
 				D26D7FD0197FAE1F00746E4D /* Products */,
 			);
@@ -120,7 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				D26D7FCF197FAE1F00746E4D /* EPhotoKitDemo.app */,
-				D26D7FF0197FAE1F00746E4D /* EPhotoKitDemoTests.xctest */,
+				D25A61F41E7DEBF50069A2C7 /* EPhotoKit.framework */,
+				D25A61FC1E7DEBF50069A2C7 /* EPhotoKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,33 +224,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D26D7FF7197FAE1F00746E4D /* EPhotoKitDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				D26D7FFD197FAE1F00746E4D /* EPhotoKitDemoTests.m */,
-				D26D7FF8197FAE1F00746E4D /* Supporting Files */,
-			);
-			path = EPhotoKitDemoTests;
-			sourceTree = "<group>";
-		};
-		D26D7FF8197FAE1F00746E4D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D26D7FF9197FAE1F00746E4D /* EPhotoKitDemoTests-Info.plist */,
-				D26D7FFA197FAE1F00746E4D /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D26D8007197FAE2A00746E4D /* EPhotoKit */ = {
-			isa = PBXGroup;
-			children = (
-				D20839CE198C9F8400BE4069 /* Subclass */,
-				D26D800E1980BCF500746E4D /* Category */,
-			);
-			path = EPhotoKit;
-			sourceTree = "<group>";
-		};
 		D26D800E1980BCF500746E4D /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +237,58 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D25A61F11E7DEBF50069A2C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25A62141E7DEC830069A2C7 /* UIImageView+ImagePicker.h in Headers */,
+				D25A62161E7DEC8C0069A2C7 /* UIView+FindUIViewController.h in Headers */,
+				D25A62061E7DEBF60069A2C7 /* EPhotoKit.h in Headers */,
+				D25A62121E7DEC750069A2C7 /* UIImageViewWithPicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		D25A61F31E7DEBF50069A2C7 /* EPhotoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25A620F1E7DEBF60069A2C7 /* Build configuration list for PBXNativeTarget "EPhotoKit" */;
+			buildPhases = (
+				D25A61EF1E7DEBF50069A2C7 /* Sources */,
+				D25A61F01E7DEBF50069A2C7 /* Frameworks */,
+				D25A61F11E7DEBF50069A2C7 /* Headers */,
+				D25A61F21E7DEBF50069A2C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EPhotoKit;
+			productName = EPhotoKit;
+			productReference = D25A61F41E7DEBF50069A2C7 /* EPhotoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D25A61FB1E7DEBF50069A2C7 /* EPhotoKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25A62111E7DEBF60069A2C7 /* Build configuration list for PBXNativeTarget "EPhotoKitTests" */;
+			buildPhases = (
+				D25A61F81E7DEBF50069A2C7 /* Sources */,
+				D25A61F91E7DEBF50069A2C7 /* Frameworks */,
+				D25A61FA1E7DEBF50069A2C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D25A61FF1E7DEBF60069A2C7 /* PBXTargetDependency */,
+				D25A62011E7DEBF60069A2C7 /* PBXTargetDependency */,
+			);
+			name = EPhotoKitTests;
+			productName = EPhotoKitTests;
+			productReference = D25A61FC1E7DEBF50069A2C7 /* EPhotoKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D26D7FCE197FAE1F00746E4D /* EPhotoKitDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D26D8001197FAE1F00746E4D /* Build configuration list for PBXNativeTarget "EPhotoKitDemo" */;
@@ -212,33 +296,17 @@
 				D26D7FCB197FAE1F00746E4D /* Sources */,
 				D26D7FCC197FAE1F00746E4D /* Frameworks */,
 				D26D7FCD197FAE1F00746E4D /* Resources */,
+				D25A62101E7DEBF60069A2C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D25A62081E7DEBF60069A2C7 /* PBXTargetDependency */,
 			);
 			name = EPhotoKitDemo;
 			productName = EPhotoKitDemo;
 			productReference = D26D7FCF197FAE1F00746E4D /* EPhotoKitDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D26D7FEF197FAE1F00746E4D /* EPhotoKitDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D26D8004197FAE1F00746E4D /* Build configuration list for PBXNativeTarget "EPhotoKitDemoTests" */;
-			buildPhases = (
-				D26D7FEC197FAE1F00746E4D /* Sources */,
-				D26D7FED197FAE1F00746E4D /* Frameworks */,
-				D26D7FEE197FAE1F00746E4D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D26D7FF6197FAE1F00746E4D /* PBXTargetDependency */,
-			);
-			name = EPhotoKitDemoTests;
-			productName = EPhotoKitDemoTests;
-			productReference = D26D7FF0197FAE1F00746E4D /* EPhotoKitDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -249,11 +317,19 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Scott Zhu";
 				TargetAttributes = {
+					D25A61F31E7DEBF50069A2C7 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = LQ5JB7WE96;
+						ProvisioningStyle = Automatic;
+					};
+					D25A61FB1E7DEBF50069A2C7 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = LQ5JB7WE96;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D26D7FCE197FAE1F00746E4D;
+					};
 					D26D7FCE197FAE1F00746E4D = {
 						DevelopmentTeam = LQ5JB7WE96;
-					};
-					D26D7FEF197FAE1F00746E4D = {
-						TestTargetID = D26D7FCE197FAE1F00746E4D;
 					};
 				};
 			};
@@ -271,12 +347,27 @@
 			projectRoot = "";
 			targets = (
 				D26D7FCE197FAE1F00746E4D /* EPhotoKitDemo */,
-				D26D7FEF197FAE1F00746E4D /* EPhotoKitDemoTests */,
+				D25A61F31E7DEBF50069A2C7 /* EPhotoKit */,
+				D25A61FB1E7DEBF50069A2C7 /* EPhotoKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D25A61F21E7DEBF50069A2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25A61FA1E7DEBF50069A2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D26D7FCD197FAE1F00746E4D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,45 +379,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D26D7FEE197FAE1F00746E4D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D26D7FFC197FAE1F00746E4D /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D25A61EF1E7DEBF50069A2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25A62171E7DEC8E0069A2C7 /* UIView+FindUIViewController.m in Sources */,
+				D25A62151E7DEC860069A2C7 /* UIImageView+ImagePicker.m in Sources */,
+				D25A62131E7DEC7C0069A2C7 /* UIImageViewWithPicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25A61F81E7DEBF50069A2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25A62041E7DEBF60069A2C7 /* EPhotoKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D26D7FCB197FAE1F00746E4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D26D80111980BD1E00746E4D /* UIView+FindUIViewController.m in Sources */,
-				D26D800D197FBEF000746E4D /* UIImageView+ImagePicker.m in Sources */,
 				D26D800A197FB77900746E4D /* EPhotoKitDemoViewController.m in Sources */,
 				D26D7FE3197FAE1F00746E4D /* AppDelegate.m in Sources */,
-				D20839D1198CA18A00BE4069 /* UIImageViewWithPicker.m in Sources */,
 				D26D7FDF197FAE1F00746E4D /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D26D7FEC197FAE1F00746E4D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D26D7FFE197FAE1F00746E4D /* EPhotoKitDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D26D7FF6197FAE1F00746E4D /* PBXTargetDependency */ = {
+		D25A61FF1E7DEBF60069A2C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D25A61F31E7DEBF50069A2C7 /* EPhotoKit */;
+			targetProxy = D25A61FE1E7DEBF60069A2C7 /* PBXContainerItemProxy */;
+		};
+		D25A62011E7DEBF60069A2C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D26D7FCE197FAE1F00746E4D /* EPhotoKitDemo */;
-			targetProxy = D26D7FF5197FAE1F00746E4D /* PBXContainerItemProxy */;
+			targetProxy = D25A62001E7DEBF60069A2C7 /* PBXContainerItemProxy */;
+		};
+		D25A62081E7DEBF60069A2C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D25A61F31E7DEBF50069A2C7 /* EPhotoKit */;
+			targetProxy = D25A62071E7DEBF60069A2C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -347,17 +447,121 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D26D7FFA197FAE1F00746E4D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D26D7FFB197FAE1F00746E4D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D25A620B1E7DEBF60069A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LQ5JB7WE96;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = EPhotoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.EPhotoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D25A620C1E7DEBF60069A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LQ5JB7WE96;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = EPhotoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.EPhotoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D25A620D1E7DEBF60069A2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LQ5JB7WE96;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = EPhotoKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.EPhotoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPhotoKitDemo.app/EPhotoKitDemo";
+			};
+			name = Debug;
+		};
+		D25A620E1E7DEBF60069A2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LQ5JB7WE96;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = EPhotoKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = Scott.EPhotoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPhotoKitDemo.app/EPhotoKitDemo";
+			};
+			name = Release;
+		};
 		D26D7FFF197FAE1F00746E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -436,6 +640,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EPhotoKitDemo/EPhotoKitDemo-Prefix.pch";
 				INFOPLIST_FILE = "EPhotoKitDemo/EPhotoKitDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -450,55 +655,32 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EPhotoKitDemo/EPhotoKitDemo-Prefix.pch";
 				INFOPLIST_FILE = "EPhotoKitDemo/EPhotoKitDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		D26D8005197FAE1F00746E4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EPhotoKitDemo.app/EPhotoKitDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EPhotoKitDemo/EPhotoKitDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "EPhotoKitDemoTests/EPhotoKitDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		D26D8006197FAE1F00746E4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EPhotoKitDemo.app/EPhotoKitDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EPhotoKitDemo/EPhotoKitDemo-Prefix.pch";
-				INFOPLIST_FILE = "EPhotoKitDemoTests/EPhotoKitDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D25A620F1E7DEBF60069A2C7 /* Build configuration list for PBXNativeTarget "EPhotoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25A620B1E7DEBF60069A2C7 /* Debug */,
+				D25A620C1E7DEBF60069A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D25A62111E7DEBF60069A2C7 /* Build configuration list for PBXNativeTarget "EPhotoKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25A620D1E7DEBF60069A2C7 /* Debug */,
+				D25A620E1E7DEBF60069A2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D26D7FCA197FAE1F00746E4D /* Build configuration list for PBXProject "EPhotoKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -513,15 +695,6 @@
 			buildConfigurations = (
 				D26D8002197FAE1F00746E4D /* Debug */,
 				D26D8003197FAE1F00746E4D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D26D8004197FAE1F00746E4D /* Build configuration list for PBXNativeTarget "EPhotoKitDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D26D8005197FAE1F00746E4D /* Debug */,
-				D26D8006197FAE1F00746E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
