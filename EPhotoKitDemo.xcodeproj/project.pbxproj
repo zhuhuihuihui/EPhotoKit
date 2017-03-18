@@ -26,6 +26,7 @@
 		D26D80111980BD1E00746E4D /* UIView+FindUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26D80101980BD1E00746E4D /* UIView+FindUIViewController.m */; };
 		D26D80131980FF6600746E4D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D80121980FF6600746E4D /* MobileCoreServices.framework */; };
 		D26D80151983ABE000746E4D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D80141983ABE000746E4D /* AssetsLibrary.framework */; };
+		D2FC417A1E7634E10069C0B5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FC41791E7634E10069C0B5 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		D26D80101980BD1E00746E4D /* UIView+FindUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FindUIViewController.m"; sourceTree = "<group>"; };
 		D26D80121980FF6600746E4D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D26D80141983ABE000746E4D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		D2FC41791E7634E10069C0B5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				D26D7FE1197FAE1F00746E4D /* AppDelegate.h */,
 				D26D7FE2197FAE1F00746E4D /* AppDelegate.m */,
+				D2FC41791E7634E10069C0B5 /* Launch Screen.storyboard */,
 				D26D7FE4197FAE1F00746E4D /* Main.storyboard */,
 				D26D7FEA197FAE1F00746E4D /* Images.xcassets */,
 				D26D7FD9197FAE1F00746E4D /* Supporting Files */,
@@ -246,6 +249,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Scott Zhu";
 				TargetAttributes = {
+					D26D7FCE197FAE1F00746E4D = {
+						DevelopmentTeam = LQ5JB7WE96;
+					};
 					D26D7FEF197FAE1F00746E4D = {
 						TestTargetID = D26D7FCE197FAE1F00746E4D;
 					};
@@ -277,6 +283,7 @@
 			files = (
 				D26D7FEB197FAE1F00746E4D /* Images.xcassets in Resources */,
 				D26D7FDD197FAE1F00746E4D /* InfoPlist.strings in Resources */,
+				D2FC417A1E7634E10069C0B5 /* Launch Screen.storyboard in Resources */,
 				D26D7FE6197FAE1F00746E4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,11 +432,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = LQ5JB7WE96;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EPhotoKitDemo/EPhotoKitDemo-Prefix.pch";
 				INFOPLIST_FILE = "EPhotoKitDemo/EPhotoKitDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -438,11 +446,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = LQ5JB7WE96;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EPhotoKitDemo/EPhotoKitDemo-Prefix.pch";
 				INFOPLIST_FILE = "EPhotoKitDemo/EPhotoKitDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
