@@ -12,11 +12,11 @@
 		D25A62061E7DEBF60069A2C7 /* EPhotoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D25A61F61E7DEBF50069A2C7 /* EPhotoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D25A62091E7DEBF60069A2C7 /* EPhotoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25A61F41E7DEBF50069A2C7 /* EPhotoKit.framework */; };
 		D25A620A1E7DEBF60069A2C7 /* EPhotoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D25A61F41E7DEBF50069A2C7 /* EPhotoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D25A62121E7DEC750069A2C7 /* UIImageViewWithPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = D20839CF198CA18A00BE4069 /* UIImageViewWithPicker.h */; };
+		D25A62121E7DEC750069A2C7 /* UIImageViewWithPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = D20839CF198CA18A00BE4069 /* UIImageViewWithPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D25A62131E7DEC7C0069A2C7 /* UIImageViewWithPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D20839D0198CA18A00BE4069 /* UIImageViewWithPicker.m */; };
-		D25A62141E7DEC830069A2C7 /* UIImageView+ImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = D26D800B197FBEF000746E4D /* UIImageView+ImagePicker.h */; };
+		D25A62141E7DEC830069A2C7 /* UIImageView+ImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = D26D800B197FBEF000746E4D /* UIImageView+ImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D25A62151E7DEC860069A2C7 /* UIImageView+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D26D800C197FBEF000746E4D /* UIImageView+ImagePicker.m */; };
-		D25A62161E7DEC8C0069A2C7 /* UIView+FindUIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D26D800F1980BD1E00746E4D /* UIView+FindUIViewController.h */; };
+		D25A62161E7DEC8C0069A2C7 /* UIView+FindUIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D26D800F1980BD1E00746E4D /* UIView+FindUIViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D25A62171E7DEC8E0069A2C7 /* UIView+FindUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26D80101980BD1E00746E4D /* UIView+FindUIViewController.m */; };
 		D26D7FD3197FAE1F00746E4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D7FD2197FAE1F00746E4D /* Foundation.framework */; };
 		D26D7FD5197FAE1F00746E4D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26D7FD4197FAE1F00746E4D /* CoreGraphics.framework */; };
