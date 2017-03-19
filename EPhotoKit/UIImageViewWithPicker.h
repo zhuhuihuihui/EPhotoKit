@@ -11,14 +11,13 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-
-typedef enum
-{
-    Photo = 0,
-    Camera = 1,
-    LatestTaken = 2
-}SourceType;
-
+typedef NS_ENUM(NSUInteger, EPhotoSourceType) {
+    EPhotoSourcePhoto,
+    EPhotoSourceCamera,
+    EPhotoSourceLatestTaken,
+    EPhotoSourceTitle,
+    EPhotoSourceCancel
+};
 
 @class UIImageViewWithPicker;
 
@@ -27,12 +26,17 @@ typedef enum
 @optional
 - (void)imageViewWithPicker:(UIImageViewWithPicker *)imageViewWithPicker
                    imageGet:(UIImage *)image
-             fromSourceType:(SourceType) sourceType;
+             fromSourceType:(EPhotoSourceType) sourceType;
 
 @end
 
 
-@interface UIImageViewWithPicker : UIImageView <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface UIImageViewWithPicker : UIImageView <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (strong, nonatomic) IBInspectable UIImage *placeholderImage;
+@property (assign, nonatomic) IBInspectable UIEdgeInsets placeholderImageInsets;
+@property (strong, nonatomic) IBInspectable NSDictionary *supportedTitles;
+
 
 - (void)setImagePickerEnable:(BOOL)enable;
 

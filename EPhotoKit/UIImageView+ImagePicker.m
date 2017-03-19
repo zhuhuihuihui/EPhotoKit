@@ -31,7 +31,7 @@
     
 }
 
-- (void) imageViewTapped:(UITapGestureRecognizer *)tapGestureRecognizer
+- (void)imageViewTapped:(UITapGestureRecognizer *)tapGestureRecognizer
 {
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Cate"
                                                              delegate:self

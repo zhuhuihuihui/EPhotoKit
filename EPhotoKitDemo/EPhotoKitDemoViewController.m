@@ -31,6 +31,9 @@
 {
     [super viewDidLoad];
     [_imageView setImagePickerEnable:YES];
+    [_imageView setSupportedTitles:@{@(EPhotoSourceCamera): @"Camera",
+                                     @(EPhotoSourcePhoto): @"Photo",
+                                     @(EPhotoSourceCancel): @"Cancel"}];
     [_imageView setDelegate:self];
     
     [_imageViewUsingCatagore setImagePickerEnable:YES];
@@ -128,9 +131,9 @@
 #pragma -mark- UIImageViewWithPickerDelegate
 - (void)imageViewWithPicker:(UIImageViewWithPicker *)imageViewWithPicker
                    imageGet:(UIImage *)image
-             fromSourceType:(SourceType)sourceType
+             fromSourceType:(EPhotoSourceType)sourceType
 {
-    NSLog(@"UIImageViewWithPickerDelegate triggered!! by source Type : %d", sourceType);
+    NSLog(@"UIImageViewWithPickerDelegate triggered!! by source Type : %lu", (unsigned long)sourceType);
 }
 
 @end
