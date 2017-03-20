@@ -45,8 +45,8 @@
     }
 }
 
-- (void)setImagePickerEnable:(BOOL)enable {
-    if (enable) {
+- (void)setImagePickerEnable:(BOOL)imagePickerEnable {
+    if (imagePickerEnable) {
         [self setUserInteractionEnabled:YES];
         
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewTapped:)];

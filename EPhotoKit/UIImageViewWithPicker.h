@@ -36,9 +36,7 @@ typedef NS_ENUM(NSUInteger, EPhotoSourceType) {
 @property (strong, nonatomic) IBInspectable UIImage *placeholderImage;
 @property (assign, nonatomic) IBInspectable UIEdgeInsets placeholderImageInsets;
 @property (strong, nonatomic) IBInspectable NSDictionary *supportedTitles;
-
-
-- (void)setImagePickerEnable:(BOOL)enable;
+@property (assign, nonatomic) IBInspectable BOOL imagePickerEnable;
 
 @property (weak, nonatomic) id <UIImageViewWithPickerDelegate> delegate;
 
