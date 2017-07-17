@@ -36,6 +36,10 @@
     
 }
 
+- (void)layoutSubviews {
+    self.placeholderImageInsets = self.placeholderImageInsets;
+}
+
 #pragma mark - Setter and Getter
 
 - (void)setDelegate:(id<UIImageViewWithPickerDelegate>)delegate {
@@ -79,7 +83,7 @@
     if (placeholderImageInsets.left + placeholderImageInsets.right >= CGRectGetWidth(self.bounds) ||
         placeholderImageInsets.top + placeholderImageInsets.bottom >= CGRectGetHeight(self.bounds))
         return;
-    
+    _placeholderImageInsets = placeholderImageInsets;
     CGFloat newWidth = CGRectGetWidth(self.bounds) - placeholderImageInsets.left - placeholderImageInsets.right;
     CGFloat newHeight = CGRectGetHeight(self.bounds) - placeholderImageInsets.top - placeholderImageInsets.bottom;
     [self.placeholderImageView setFrame:CGRectMake(placeholderImageInsets.left, placeholderImageInsets.top, newWidth, newHeight)];
