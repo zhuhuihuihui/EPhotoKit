@@ -262,7 +262,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
     if ([mediaType isEqualToString: (NSString *)kUTTypeImage])
     {
-        [self setImage:[info objectForKey:UIImagePickerControllerOriginalImage]];
+        [self setImage:[info objectForKey:UIImagePickerControllerEditedImage]];
     }
     else if([mediaType isEqualToString: (NSString *)kUTTypeMovie])
     {
@@ -299,7 +299,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     imagePickerController.modalPresentationStyle = UIModalPresentationCurrentContext;
     imagePickerController.sourceType = sourceType;
     imagePickerController.delegate = self;
-    //imagePickerController.allowsEditing = YES;
+    imagePickerController.allowsEditing = YES;
     /** To control if it supports videos*/
     //imagePickerController.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:sourceType];
     NSLog(@"%@", [UIImagePickerController availableMediaTypesForSourceType:sourceType]);
